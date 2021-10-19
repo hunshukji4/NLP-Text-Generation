@@ -21,7 +21,7 @@ jobs:
 
   cloneRepo:
     resources:
-      instance-type: C3
+      instance-type: P4000
     outputs:
       repo:
         type: volume
@@ -34,7 +34,7 @@ jobs:
 
   generateText:
     resources:
-      instance-type: C5
+      instance-type: P4000
     needs:
       - cloneRepo
     inputs:
